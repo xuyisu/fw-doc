@@ -13,7 +13,23 @@
   <script>
     window.$docsify = {
       name: '',
-      repo: ''
+      repo: '',
+      coverpage: true,
+      loadSidebar: true,
+      loadNavbar:true,
+      auto2top: true,
+      maxLevel: 2,
+      subMaxLevel: 3,
+      search: {
+        placeholder: '搜索',
+        noData: '找不到结果!',
+        depth: 3
+      },
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md',//防止意外回退
+        '/.*/_navbar.md': '/_navbar.md'
+      }
+
     }
   </script>
   <!-- Docsify v4 -->
